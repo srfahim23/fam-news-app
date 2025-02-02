@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>FamNews</title>
+  <link rel="stylesheet" href="./style/style.css">
+
+  <style>
+    .logo-name{
+      color:red;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <div class="header-container">
+      <div class="logo-section">
+        <img src="./style/fam News.png" alt="FamNews Logo" class="logo">
+        <h1><b>Fam</b><span class="logo-name"><i>News</i></span></h1>
+      </div>
+      <div class="search-container">
+        <input type="text" id="search-input" placeholder="Search for news...">
+        <button id="search-btn">Search</button>
+      </div>
+    </div>
+  </header>
+
+  <!-- Breaking News Slider (Mobile Only) -->
+  <section class="breaking-news-slider">
+    <div class="slider-container">
+      <div class="slides"></div>
+      <button class="prev-btn">&#10094;</button>
+      <button class="next-btn">&#10095;</button>
+    </div>
+  </section>
+
+  <!-- Category Navigation -->
+  <nav class="category-nav">
+    <button class="category-tab active" data-category="breaking">Breaking News</button>
+    <button class="category-tab" data-category="technology">Tech News</button>
+    <button class="category-tab" data-category="sports">Sports News</button>
+    <button class="category-tab" data-category="business">Business News</button>
+    <button class="category-tab" data-category="entertainment">Entertainment</button>
+    <button class="category-tab" data-category="health">Health News</button>
+    <button class="category-tab" data-category="science">Science News</button>
+  </nav>
+
+  <!-- News Section -->
+  <main>
+    <div id="news-container" class="news-grid"></div>
+  </main>
+
+  <!-- Footer -->
+  <footer>
+    <p>&copy; 2025 FahimDev. All rights reserved.</p>
+  </footer>
+
+  <script src="./script/app.js"></script>
+</body>
+</html>

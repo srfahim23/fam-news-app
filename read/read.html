@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Read Article -  News</title>
+  <link rel="stylesheet" href="../style/read-styles.css"> <!-- Link to read-specific styles -->
+
+  <style>
+    .logo-name{
+      color: red;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <div class="header-container">
+      <div class="logo-section">
+        <a href="index.html" class="back-link">
+          <img src="../style/fam News.png News.png" alt="FamNews Logo" class="logo">
+          <h1>Fam<span class="logo-name"><i>News</i></span></h1>
+        </a>
+      </div>
+    </div>
+  </header>
+
+  <!-- Full Article View -->
+  <main>
+    <article id="article-container" class="article-view">
+      <h1 id="article-title">Loading...</h1>
+      <img id="article-image" src="" alt="Article Image">
+      <div id="article-content" class="scrollable-content">
+        <p id="short-content">Loading article content...</p>
+        <button id="read-more-btn" class="read-more-btn">Read More</button>
+        <div id="full-content" class="hidden"></div>
+      </div>
+
+      <!-- Redirect Options -->
+      <div class="redirect-options">
+        <button id="back-to-feed-btn" class="redirect-btn">Back to News Feed</button>
+        <a id="read-original-btn" class="redirect-btn" target="_blank">Read Original Article</a>
+      </div>
+    </article>
+  </main>
+
+  <!-- Footer -->
+  <footer>
+    <p>&copy; 2025 FahimDev. All rights reserved.</p>
+  </footer>
+
+  <script src="../script/read.js"></script>
+</body>
+</html>
